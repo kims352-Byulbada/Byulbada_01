@@ -1,0 +1,49 @@
+@keyframes insert-coin_blink {
+  0%, 59%   { opacity: 1; }
+  60%, 100% { opacity: 0; }
+}
+
+h2 {
+  animation: insert-coin_blink 1.2s infinite;
+}
+
+body {
+  background-color: black;
+  color: lightcyan;
+  font-family: Archivo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+    text-align: center
+}
+
+h1{
+  font-family:"FT88" ;
+  font-size: 100px;
+  text-shadow: skyblue;
+  text-b
+}
+
+h2{
+  font-family: "FT88";
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    black 2px,
+    black 4px
+  );
+}
+
+a:visited {color:inherit;}
+
+a:hover::before{
+  content: "▶";
+  color:skyblue;
+}

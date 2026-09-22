@@ -1,0 +1,75 @@
+@keyframes insert-coin_blink {
+  0%, 59%   { opacity: 1; }
+  60%, 100% { opacity: 0; }
+}
+
+h1 {
+  animation: insert-coin_blink 1.2s infinite;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: lightcyan;
+    text-align: center;
+}
+
+h1 {
+  font-family: ft88;
+  font-size: 50px;
+  line-height: 1.2px;
+  text-shadow: 0 0 20px;
+}
+
+h2 {
+  font-family: "ft88";
+  margin: 0 0 22px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 2;
+  text-transform: uppercase;
+  color: lightyellow;
+  text-shadow: 0 0 12px aquamarine;
+}
+
+
+
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    black 2px,
+    black 4px
+  );
+}
+
+a:visited {color:inherit;}
+
+a:hover::before{
+  content: "▶";
+  color:skyblue;
+}
+

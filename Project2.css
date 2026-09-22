@@ -1,0 +1,94 @@
+
+body {
+  background-color: black;
+  color: lightcyan;
+  font-family: Archivo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 110px 22px 80px;
+}
+
+article {
+  padding-top: 56px;
+  padding-bottom: 84px;
+}
+
+
+h1 {
+  font-family: ft88;
+  font-size: 50px;
+  line-height: 1.2px;
+}
+
+h2 {
+  font-family: "ft88";
+  margin: 0 0 22px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 2;
+  text-transform: uppercase;
+  color: lightyellow;
+  text-shadow: 0 0 12px aquamarine;
+}
+
+h2 span {
+  font-family: "Press Start 2P", monospace;
+  font-size: 23px;
+  color: white;
+  margin-right: 14px;
+}
+
+h3 {
+  margin: 40 0 40px;
+}
+
+article > p {
+  margin: 0 auto 30px;
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: cadetblue;
+  max-width: 50ch;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  margin: 0 auto 26px;
+  font-family: "DM Mono", monospace;
+  font-size: 17px;
+  line-height: 2;
+  color: lightcyan;
+  max-width: 46ch;
+}
+
+blockquote p::before {
+  content: "> ";
+  color: white;
+  text-shadow: 0 0 10px aqua;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    black 2px,
+    black 4px
+  );
+}
+
+a:visited {color:inherit;}
+
+
